@@ -1,0 +1,15 @@
+apiVersion: john.john.tech/v1beta1
+kind: App
+metadata:
+  labels:
+    app.kubernetes.io/name: app
+    app.kubernetes.io/instance: app-sample
+    app.kubernetes.io/part-of: kubebuilder-john
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kubebuilder-john
+  name: app-sample
+spec:
+  image: nginx:latest
+  replicas: 3
+  enable_ingress: true #会被修改为true
+  enable_service: false #成功

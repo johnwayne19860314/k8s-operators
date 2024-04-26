@@ -1,0 +1,7 @@
+apiVersion: baiding.teach/v1
+kind: JohnFoo
+metadata:
+  name: john-test
+spec:
+  name: john-test
+  replicas: 1
